@@ -5,9 +5,11 @@ public class Calculator {
         int result = first + second;
         System.out.println(result);
     }
+    public static int func1(int x){
+        int y = x * x + 1;
+        return y;
+    }
     public static void main(String[] args) {
-        Calculator.plus(100, 500);
-        Calculator.plus(4, 2);
-        Calculator.plus(3, 5);
+        int result = Calculator.func1(100);
     }
 }
