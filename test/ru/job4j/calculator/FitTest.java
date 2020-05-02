@@ -13,15 +13,15 @@ public class FitTest {
     }
 
     @Test
-    public void whenManHeight0ThenWeight0() {
-        double out = Fit.manWeight(0);
+    public void whenManHeight100ThenWeight0() {
+        double out = Fit.manWeight(100);
         Assert.assertEquals(0 ,out, 0.01);
     }
 
     @Test
-    public void whenManHeight60ThenWeigh69() {
-        double out = Fit.manWeight(160);
-        Assert.assertEquals(69.0 ,out, 0.01);
+    public void whenManHeight110ThenWeigh11() {
+        double out = Fit.manWeight(110);
+        Assert.assertEquals(11.5 ,out, 0.01);
     }
 
     // woman
@@ -31,14 +31,14 @@ public class FitTest {
         Assert.assertEquals(57.49 ,out, 0.01);
     }
     @Test
-    public void whenWomanHeight0ThenWeight0() {
-        double out = Fit.womanWeight(0);
+    public void whenWomanHeight110ThenWeight0() {
+        double out = Fit.womanWeight(110);
         Assert.assertEquals(0 ,out, 0.01);
     }
 
     @Test
-    public void whenWomanHeight60ThenWeight20() {
-        double out = Fit.womanWeight(60);
-        Assert.assertEquals(20 ,out, 0.01);
+    public void whenWomanHeight120ThenWeight11() {
+        double out = Fit.womanWeight(120);
+        Assert.assertEquals(11.5 ,out, 0.01);
     }
 }
