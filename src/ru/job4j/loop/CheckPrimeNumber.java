@@ -5,11 +5,12 @@ public class CheckPrimeNumber {
         boolean prime = true;
         for (int i = 2; i < number; i++) {
             if (number % i == 0) {
-                return prime = false;
+                prime = false;
+                break;
             }
         }
         if (number == 1){
-            return prime = false;
+            prime = false;
         }
         return prime;
     }
