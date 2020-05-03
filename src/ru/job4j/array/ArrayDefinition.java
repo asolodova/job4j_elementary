@@ -10,5 +10,8 @@ public class ArrayDefinition {
         names[1] = "Mark Tven";
         names[2] = "Jan Kolb";
         names[3] = "Den Roy";
+        for (int i = 0; i < 4; i++) {
+            System.out.println(names[i]);
+        }
     }
 }
