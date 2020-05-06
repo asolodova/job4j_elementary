@@ -5,7 +5,7 @@ public class Calculator {
         int result = first + second;
         System.out.println(result);
     }
-    public static int func1(int x){
+    public static int func1(int x) {
         int y = x * x + 1;
         return y;
     }

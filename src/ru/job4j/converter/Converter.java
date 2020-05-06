@@ -9,11 +9,11 @@ public class Converter {
      * Ruble to euro int.
      *
      * @param value the value
-     * @author Angelina Solodova
      * @return the int euro
+     * @author Angelina Solodova
      */
-    public static int rubleToEuro(int value){
-        int rsl = value/70;
+    public static int rubleToEuro(int value) {
+        int rsl = value / 70;
         return rsl;
     }
 
@@ -23,8 +23,8 @@ public class Converter {
      * @param value the value
      * @return the int dollar
      */
-    public static int rubleToDollar(int value){
-        int rsl = value/60;
+    public static int rubleToDollar(int value) {
+        int rsl = value / 60;
         return rsl;
     }
 

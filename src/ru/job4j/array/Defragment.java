@@ -5,12 +5,14 @@ public class Defragment {
         for (int index = 0; index < array.length; index++) {
             if (array[index] == null) {
                 int point = index; // указатель, на не null ячейку.
-                while(point + 1 <= array.length -1){
-                    if (array[point + 1] != null){
+                while (point + 1 <= array.length - 1) {
+                    if (array[point + 1] != null) {
                         array[index] = array[point + 1];
                         array[point + 1] = null;
                         break;
-                    } else { point++; }
+                    } else {
+                        point++;
+                    }
                 }
             }
             System.out.print(array[index] + " ");
