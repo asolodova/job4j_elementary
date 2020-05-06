@@ -13,6 +13,7 @@ public class ConverterTest {
         int out = Converter.rubleToEuro(in);
         Assert.assertEquals(expected, out);
     }
+
     @Test
     public void whenConvertMinus180RblThenMinus3Eur() {
         int in = -180;
@@ -20,6 +21,7 @@ public class ConverterTest {
         int out = Converter.rubleToEuro(in);
         Assert.assertEquals(expected, out);
     }
+
     @Test
     public void whenConvert0RblThen0Eur() {
         int in = 0;
@@ -36,6 +38,7 @@ public class ConverterTest {
         int out = Converter.rubleToDollar(in);
         Assert.assertEquals(expected, out);
     }
+
     @Test
     public void whenConvertMinus180RblThenMinus3Dlr() {
         int in = -180;
@@ -43,6 +46,7 @@ public class ConverterTest {
         int out = Converter.rubleToDollar(in);
         Assert.assertEquals(expected, out);
     }
+
     @Test
     public void whenConvert0RblThen0Dlr() {
         int in = 0;
@@ -50,6 +54,7 @@ public class ConverterTest {
         int out = Converter.rubleToDollar(in);
         Assert.assertEquals(expected, out);
     }
+
     @Test
     public void whenConvert10RblThen0Dlr() {
         int in = 10;

@@ -10,7 +10,7 @@ public class FindLoopTest {
     @Test
     public void whenArrayHas5Then0() {
         FindLoop find = new FindLoop();
-        int[] input = new int[] {5, 10, 3};
+        int[] input = new int[]{5, 10, 3};
         int value = 5;
         int result = find.indexOf(input, value);
         int expect = 0;
@@ -20,7 +20,7 @@ public class FindLoopTest {
     @Test
     public void whenArrayHas3Then2() {
         FindLoop find = new FindLoop();
-        int[] input = new int[] {5, 1, 3};
+        int[] input = new int[]{5, 1, 3};
         int value = 3;
         int result = find.indexOf(input, value);
         int expect = 2;
@@ -30,7 +30,7 @@ public class FindLoopTest {
     @Test
     public void whenArrayHas10ThenMinus1() {
         FindLoop find = new FindLoop();
-        int[] input = new int[] {5, 1, 3};
+        int[] input = new int[]{5, 1, 3};
         int value = 10;
         int result = find.indexOf(input, value);
         int expect = -1;
@@ -39,7 +39,7 @@ public class FindLoopTest {
 
     @Test
     public void whenFind3() {
-        int[] input = new int[] {5, 2, 10, 2, 4};
+        int[] input = new int[]{5, 2, 10, 2, 4};
         int value = 2;
         int start = 2;
         int finish = 4;
@@ -50,7 +50,7 @@ public class FindLoopTest {
 
     @Test
     public void whenFind0() {
-        int[] input = new int[] {5, 2, 0, 0, 4};
+        int[] input = new int[]{5, 2, 0, 0, 4};
         int value = 0;
         int start = 2;
         int finish = 4;
@@ -61,7 +61,7 @@ public class FindLoopTest {
 
     @Test
     public void whenFindMinus1() {
-        int[] input = new int[] {5, 2, 0, 0, 4};
+        int[] input = new int[]{5, 2, 0, 0, 4};
         int value = 10;
         int start = 4;
         int finish = 4;
