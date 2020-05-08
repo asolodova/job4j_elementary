@@ -6,9 +6,20 @@ public class Calculator {
         System.out.println(result);
     }
     public static int func1(int x) {
-        int y = x * x + 1;
-        return y;
+        return x * x + 1;
     }
+
+    public double add(double first, double second) {
+        return first + second;
+    }
+
+    public double add(double first, double second, double third) {
+        return add(
+                first,
+                add(second, third)
+        );
+    }
+
     public static void main(String[] args) {
         int result = Calculator.func1(100);
     }
