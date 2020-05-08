@@ -13,6 +13,7 @@ public class TriangleTest {
         Triangle rty = new Triangle(new Point(1, 3), new Point(3, 7), new Point(6, 10));
         assertThat(true, is(rty.exist(rty)));
     }
+
     @Test
     public void whenNotExist() {
         Triangle rty = new Triangle(new Point(1, 3), new Point(1, 2), new Point(1, 3));
