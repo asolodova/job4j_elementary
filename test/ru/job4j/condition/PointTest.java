@@ -39,4 +39,18 @@ public class PointTest {
         Point b = new Point(20000, 500000);
         Assert.assertEquals(499361.59, a.distance(b), 0.01);
     }
+
+    @Test
+    public void when3dPositivePoints() {
+        Point a = new Point(10, 10, 10);
+        Point b = new Point(20, 20, 20);
+        Assert.assertEquals(14.14, a.distance(b), 0.01);
+    }
+
+    @Test
+    public void when3dNegativePoints() {
+        Point a = new Point(-10, -10, -10);
+        Point b = new Point(20, 20, 20);
+        Assert.assertEquals(42.42, a.distance(b), 0.01);
+    }
 }
