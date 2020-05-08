@@ -7,31 +7,36 @@ public class PointTest {
 
     @Test
     public void whenPoints1155ThenDistance5() {
-        double out = Point.distance(1, 1, 5, 5);
-        Assert.assertEquals(5.65, out, 0.01);
+        Point a = new Point(1, 1);
+        Point b = new Point(5, 5);
+        Assert.assertEquals(5.65, a.distance(b), 0.01);
     }
 
     @Test
     public void whenPoints0000ThenDistance0() {
-        double out = Point.distance(0, 0, 0, 0);
-        Assert.assertEquals(0, out, 0.01);
+        Point a = new Point(0, 0);
+        Point b = new Point(0, 0);
+        Assert.assertEquals(0, a.distance(b), 0.01);
     }
 
     @Test
     public void whenPoints1111ThenDistance0() {
-        double out = Point.distance(1, 1, 1, 1);
-        Assert.assertEquals(0, out, 0.01);
+        Point a = new Point(1, 1);
+        Point b = new Point(1, 1);
+        Assert.assertEquals(0, a.distance(b), 0.01);
     }
 
     @Test
     public void whenPoints525222ThenDistance70() {
-        double out = Point.distance(52, 52, 2, 2);
-        Assert.assertEquals(70.71, out, 0.01);
+        Point a = new Point(52, 52);
+        Point b = new Point(2, 2);
+        Assert.assertEquals(70.71, a.distance(b), 0.01);
     }
 
     @Test
     public void whenPoints1000100020000500000ThenDistance499361() {
-        double out = Point.distance(1000, 1000, 20000, 500000);
-        Assert.assertEquals(499361.59, out, 0.01);
+        Point a = new Point(1000, 1000);
+        Point b = new Point(20000, 500000);
+        Assert.assertEquals(499361.59, a.distance(b), 0.01);
     }
 }
