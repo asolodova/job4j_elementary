@@ -21,10 +21,10 @@ public class Triangle {
      *
      * @return Периметр.
      */
-    public double period(Triangle triangle) {
-        double a = triangle.first.distance(second);
-        double b = triangle.first.distance(third);
-        double c = triangle.second.distance(third);
+    public double period() {
+        double a = first.distance(second);
+        double b = first.distance(third);
+        double c = second.distance(third);
         return (a + b + c) / 2;
     }
 
@@ -39,13 +39,13 @@ public class Triangle {
      *
      * @return Вернуть площадь, если треугольник существует или -1.
      */
-    public double area(Triangle triangle) {
-        double a = triangle.first.distance(second);
-        double b = triangle.first.distance(third);
-        double c = triangle.second.distance(third);
+    public double area() {
+        double a = first.distance(second);
+        double b = first.distance(third);
+        double c = second.distance(third);
         double rsl = -1;
-        double p = triangle.period(triangle);
-        if (this.exist(triangle)) {
+        double p = period();
+        if (this.exist()) {
             rsl = Math.sqrt(p * (p - a) * (p - b) * (p - c));
         }
         return rsl;
@@ -56,10 +56,10 @@ public class Triangle {
      *
      * @return true/false
      */
-    public boolean exist(Triangle triangle) {
-        double a = triangle.first.distance(second);
-        double b = triangle.first.distance(third);
-        double c = triangle.second.distance(third);
+    public boolean exist() {
+        double a = first.distance(second);
+        double b = first.distance(third);
+        double c = second.distance(third);
         return a + b > c && a + c > b && b + c > a;
     }
 }
