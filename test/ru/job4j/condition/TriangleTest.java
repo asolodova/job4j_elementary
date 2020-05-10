@@ -3,20 +3,7 @@ package ru.job4j.condition;
 import org.junit.Assert;
 import org.junit.Test;
 
-import static org.hamcrest.core.Is.is;
-import static org.junit.Assert.assertThat;
-
 public class TriangleTest {
-
-    @Test
-    public void whenExist() {
-        assertThat(true, is(Triangle.exist(3, 3, 5)));
-    }
-
-    @Test
-    public void whenNotExist() {
-        assertThat(false, is(Triangle.exist(1, 10, 2)));
-    }
 
     @Test
     public void periodMore1() {
