@@ -45,7 +45,7 @@ public class Triangle {
         double c = second.distance(third);
         double rsl = -1;
         double p = period();
-        if (this.exist()) {
+        if (exist(a, b, c)) {
             rsl = Math.sqrt(p * (p - a) * (p - b) * (p - c));
         }
         return rsl;
@@ -56,10 +56,7 @@ public class Triangle {
      *
      * @return true/false
      */
-    public boolean exist() {
-        double a = first.distance(second);
-        double b = first.distance(third);
-        double c = second.distance(third);
+    public static boolean exist(double a, double b, double c) {
         return a + b > c && a + c > b && b + c > a;
     }
 }

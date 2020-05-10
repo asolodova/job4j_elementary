@@ -10,14 +10,12 @@ public class TriangleTest {
 
     @Test
     public void whenExist() {
-        Triangle rty = new Triangle(new Point(1, 3), new Point(3, 7), new Point(6, 10));
-        assertThat(true, is(rty.exist()));
+        assertThat(true, is(Triangle.exist(3, 3, 5)));
     }
 
     @Test
     public void whenNotExist() {
-        Triangle rty = new Triangle(new Point(1, 3), new Point(1, 2), new Point(1, 3));
-        assertThat(false, is(rty.exist()));
+        assertThat(false, is(Triangle.exist(1, 10, 2)));
     }
 
     @Test
