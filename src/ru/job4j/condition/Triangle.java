@@ -28,6 +28,10 @@ public class Triangle {
         return (a + b + c) / 2;
     }
 
+    private double period(double a, double b, double c) {
+        return (a + b + c) / 2;
+    }
+
     /**
      * Метод должен вычислить площадь треугольника.
      * <p>
@@ -44,7 +48,7 @@ public class Triangle {
         double b = first.distance(third);
         double c = second.distance(third);
         double rsl = -1;
-        double p = period();
+        double p = period(a, b, c);
         if (exist(a, b, c)) {
             rsl = Math.sqrt(p * (p - a) * (p - b) * (p - c));
         }
